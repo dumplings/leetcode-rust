@@ -3,10 +3,10 @@ struct Solution;
 #[allow(dead_code)]
 impl Solution {
     pub fn roman_to_int(s: String) -> i32 {
-        fn char_to_value(c:char) -> i32 {
+        fn char_to_value(c: char) -> i32 {
             match c {
                 'I' => 1,
-                'V'=> 5,
+                'V' => 5,
                 'X' => 10,
                 'L' => 50,
                 'C' => 100,
@@ -21,7 +21,7 @@ impl Solution {
         for i in 0..chars.len() {
             let current_value = char_to_value(chars[i]);
             if i + 1 < chars.len() {
-                let next_value = char_to_value(chars[i+1]);
+                let next_value = char_to_value(chars[i + 1]);
                 if current_value < next_value {
                     total -= current_value;
                 } else {
