@@ -3,6 +3,7 @@ use crate::models::linked_list::{ListNode, vec_to_list};
 #[allow(dead_code)]
 struct Solution;
 
+#[allow(dead_code)]
 impl Solution {
     pub fn merge_two_lists(
         list1: Option<Box<ListNode>>,
@@ -40,7 +41,7 @@ impl Solution {
 mod tests {
     use super::*;
     #[test]
-    pub fn test_merge_two_lists() {
+    fn test_merge_two_lists() {
         let l1 = vec![1, 2, 4];
         let l2 = vec![1, 3, 4];
         assert_eq!(

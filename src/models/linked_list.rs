@@ -21,6 +21,7 @@ pub fn vec_to_list(vec: Vec<i32>) -> Option<Box<ListNode>> {
     head
 }
 
+#[allow(dead_code)]
 pub fn list_to_vec(head: Option<Box<ListNode>>) -> Vec<i32> {
     let mut vec = Vec::new();
     let mut current = head;
