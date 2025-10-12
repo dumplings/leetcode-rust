@@ -8,3 +8,4 @@ mod _026_remove_duplicates_from_sorted_array;
 mod _027_remove_element;
 mod _028_find_the_index_of_the_first_occurrence_in_a_string;
 mod _035_search_insert_position;
+mod _058_length_of_last_word;
