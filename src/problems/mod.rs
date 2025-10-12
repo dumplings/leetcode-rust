@@ -5,3 +5,4 @@ mod _014_longest_common_prefix;
 mod _020_valid_parentheses;
 mod _021_merge_two_sorted_lists;
 mod _026_remove_duplicates_from_sorted_array;
+mod _027_remove_element;
