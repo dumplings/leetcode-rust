@@ -26,7 +26,10 @@ mod tests {
     use super::*;
     #[test]
     fn test_remove_duplicates() {
-        assert_eq!(Solution::remove_duplicates(&mut vec![1,1,2]), 2);
-        assert_eq!(Solution::remove_duplicates(&mut vec![0,0,1,1,1,2,2,3,3,4]), 5);
+        assert_eq!(Solution::remove_duplicates(&mut vec![1, 1, 2]), 2);
+        assert_eq!(
+            Solution::remove_duplicates(&mut vec![0, 0, 1, 1, 1, 2, 2, 3, 3, 4]),
+            5
+        );
     }
 }

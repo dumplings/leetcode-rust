@@ -6,3 +6,4 @@ mod _020_valid_parentheses;
 mod _021_merge_two_sorted_lists;
 mod _026_remove_duplicates_from_sorted_array;
 mod _027_remove_element;
+mod _028_find_the_index_of_the_first_occurrence_in_a_string;
