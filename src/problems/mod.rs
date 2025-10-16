@@ -11,3 +11,4 @@ mod _035_search_insert_position;
 mod _058_length_of_last_word;
 mod _066_plus_one;
 mod _067_add_binary;
+mod _69_sqrtx;
