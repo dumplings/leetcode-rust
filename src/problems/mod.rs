@@ -12,4 +12,4 @@ mod _058_length_of_last_word;
 mod _066_plus_one;
 mod _067_add_binary;
 mod _070_climbing_stairs;
-mod _69_sqrtx;
+mod _069_sqrtx;
