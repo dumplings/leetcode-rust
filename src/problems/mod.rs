@@ -13,3 +13,4 @@ mod _066_plus_one;
 mod _067_add_binary;
 mod _070_climbing_stairs;
 mod _069_sqrtx;
+mod _083_remove_duplicates_from_sorted_list;
