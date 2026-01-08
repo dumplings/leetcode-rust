@@ -1,17 +1,1 @@
-pub mod _001_two_sum;
-mod _009_palindrome_number;
-mod _013_roman_to_integer;
-mod _014_longest_common_prefix;
-mod _020_valid_parentheses;
-mod _021_merge_two_sorted_lists;
-mod _026_remove_duplicates_from_sorted_array;
-mod _027_remove_element;
-mod _028_find_the_index_of_the_first_occurrence_in_a_string;
-mod _035_search_insert_position;
-mod _058_length_of_last_word;
-mod _066_plus_one;
-mod _067_add_binary;
-mod _069_sqrtx;
-mod _070_climbing_stairs;
-mod _083_remove_duplicates_from_sorted_list;
-mod _088_merge_sorted_array;
+pub mod easy;

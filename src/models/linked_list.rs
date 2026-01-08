@@ -1,7 +1,7 @@
 // 定义链表节点（LeetCode标准链表定义）
 #[derive(PartialEq, Eq, Clone, Debug)]
 pub struct ListNode {
-    pub val: i32,                  // 节点存储的整数值
+    pub val: i32,                    // 节点存储的整数值
     pub next: Option<Box<ListNode>>, // 下一个节点（Box用于堆内存分配）
 }
 
@@ -10,7 +10,7 @@ impl ListNode {
     pub fn new(val: i32) -> Self {
         ListNode {
             val,
-            next: None // 新节点默认没有下一个节点
+            next: None, // 新节点默认没有下一个节点
         }
     }
 }

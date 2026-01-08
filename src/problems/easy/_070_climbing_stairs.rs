@@ -1,5 +1,3 @@
-use std::collections::HashMap;
-
 #[allow(dead_code)]
 struct Solution;
 

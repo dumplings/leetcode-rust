@@ -1,4 +1,4 @@
-use crate::models::linked_list::{ListNode, vec_to_list};
+use crate::utils::ListNode;
 
 #[allow(dead_code)]
 struct Solution;
@@ -45,16 +45,16 @@ mod tests {
         let l1 = vec![1, 2, 4];
         let l2 = vec![1, 3, 4];
         assert_eq!(
-            Solution::merge_two_lists(vec_to_list(l1), vec_to_list(l2)),
-            vec_to_list(vec![1, 1, 2, 3, 4, 4])
+            Solution::merge_two_lists(ListNode::from_vec(l1), ListNode::from_vec(l2)),
+            ListNode::from_vec(vec![1, 1, 2, 3, 4, 4])
         );
         assert_eq!(
-            Solution::merge_two_lists(vec_to_list(vec![]), vec_to_list(vec![])),
-            vec_to_list(vec![])
+            Solution::merge_two_lists(ListNode::from_vec(vec![]), ListNode::from_vec(vec![])),
+            ListNode::from_vec(vec![])
         );
         assert_eq!(
-            Solution::merge_two_lists(vec_to_list(vec![]), vec_to_list(vec![0])),
-            vec_to_list(vec![0])
+            Solution::merge_two_lists(ListNode::from_vec(vec![]), ListNode::from_vec(vec![0])),
+            ListNode::from_vec(vec![0])
         );
     }
 }

@@ -4,3 +4,8 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+
+# 作为库项目
+[lib]
+name = "leetcode"
+path = "src/lib.rs"
