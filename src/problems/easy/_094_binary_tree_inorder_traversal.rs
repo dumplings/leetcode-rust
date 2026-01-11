@@ -26,25 +26,43 @@ impl Solution {
 
     /// 方法二：迭代实现（使用栈）
     pub fn inorder_traversal_iterative(root: Option<Rc<RefCell<TreeNode>>>) -> Vec<i32> {
+        // 存储最终遍历结果的向量
         let mut result = Vec::new();
+        // 使用栈来模拟递归调用栈，存储待处理的节点
         let mut stack = Vec::new();
+        // current指针：当前正处理的节点，初始化为根节点
         let mut current = root;
 
+        // 主循环条件：当前节点不为空或栈不为空
+        // - current不为空：还有左子树需要处理
+        // - 栈不为空：还有节点需要回溯处理
         while current.is_some() || !stack.is_empty() {
-            // 将所有左子节点入栈
+            // 第一阶段：尽可能深入左子树
+            // 这个循环将当前节点及其所有左子节点压入栈中
+            // 模拟递归中一直向左走到底的过程
             while let Some(node) = current {
+                // 将当前节点压入栈中，以便后续回溯访问
                 stack.push(Rc::clone(&node));
+
+                // 将current移动到左子节点，继续深入左子树
+                // 使用.clone()是因为Rc是引用计数智能指针，需要增加引用计数
                 current = node.borrow().left.clone();
             }
 
-            // 弹出栈顶节点
+            // 第二阶段：回溯并处理节点
+            // 当不能再向左走时，从栈中弹出节点进行处理
             if let Some(node) = stack.pop() {
-                // 访问节点值
+                // 访问当前节点值，这是『中序』的关键：
+                // 在左子树处理完后、右子树处理前访问节点值
                 result.push(node.borrow().val);
-                // 转向右子节点
+
+                // 转向处理右子树
+                // 将current设置为当前节点的右子节点
+                // 下一轮循环会先处理右子树的左子树（如果存在）
                 current = node.borrow().right.clone();
             }
         }
+
         result
     }
 }
