@@ -18,3 +18,4 @@ pub mod _088_merge_sorted_array;
 pub mod _094_binary_tree_inorder_traversal;
 pub mod _100_same_tree;
 pub mod _101_symmetric_tree;
+pub mod _104_maximum_depth_of_binary_tree;

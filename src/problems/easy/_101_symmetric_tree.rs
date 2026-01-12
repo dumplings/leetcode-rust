@@ -72,7 +72,7 @@ impl Solution {
             match (left, right) {
                 (None, None) => continue,
                 (None, Some(_)) | (Some(_), None) => return false,
-                (Some((left_node)), Some(right_node)) => {
+                (Some(left_node), Some(right_node)) => {
                     let left_ref = left_node.borrow();
                     let right_ref = right_node.borrow();
 
